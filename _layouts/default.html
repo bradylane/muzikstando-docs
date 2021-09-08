@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8">
     {% if page.title %}
-      {% assign title = page.title | append: " - " | append: site.title %}
-    {% else %}
-      {% assign title = site.title %}
+      {% assign title = page.title | append: " - " %}
     {% endif %}
-    <title>{{ title }}</title>
+    <title>{{ title }}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
   </head>
   <body>
