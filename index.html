@@ -3,12 +3,10 @@ layout: default
 ---
 <h2>Muzikstando 2</h2>
 <p>Muzikstando shows chord charts in different keys on multiple displays.</p>
-<ul>
+<div id="gallery">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <img src="{{ site.baseurl }}/photos/{{ post.title }}-250.jpg" alt="{{ post.title }}" />
-      </a>
-    </li>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <img src="{{ site.baseurl }}/photos/{{ post.title }}-250.jpg" alt="{{ post.title }}" />
+    </a>
   {% endfor %}
-</ul>
+</div>
