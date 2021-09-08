@@ -4,8 +4,7 @@ layout: default
 <h2>Muzikstando 2</h2>
 <p>Muzikstando shows chord charts in different keys on multiple displays.</p>
 <ul>
-  {% assign sortedPosts = site.posts | sort: 'order' | reverse %}
-  {% for post in sortedPosts %}
+  {% for post in site.posts %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
