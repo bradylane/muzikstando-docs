@@ -6,7 +6,9 @@ layout: default
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <img src="{{ site.baseurl }}/photos/{{ post.title }}-250.jpg" alt="{{ post.title }}" />
+      </a>
     </li>
   {% endfor %}
 </ul>
