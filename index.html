@@ -7,7 +7,7 @@ layout: default
   {% assign sortedPosts = site.posts | sort: 'order' | reverse %}
   {% for post in sortedPosts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>
