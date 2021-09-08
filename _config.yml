@@ -1,7 +1,7 @@
 domain: bradylane.github.io
 url: https://bradylane.github.io
 baseurl: /muzikstando-docs
-titel: Brady Lane Photography
+title: Brady Lane Photography
 permalink: /:title
 defaults:
   -
