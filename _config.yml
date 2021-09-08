@@ -1,5 +1,6 @@
 domain: bradylane.github.io/muzikstando-docs
 url: https://bradylane.github.io/muzikstando-docs
+permalink: /:title
 defaults:
   -
     scope:
