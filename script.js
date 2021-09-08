@@ -1,4 +1,7 @@
 ---
 layout: blank
 ---
-const posts = [{{ site.posts }}]
+const posts = []
+{% for post in site.posts %}
+  posts.push('{{ post.title }}')
+{% endfor %}
