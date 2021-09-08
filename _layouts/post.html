@@ -6,14 +6,14 @@ layout: default
   {% if page.previous %}
     {% assign previous = page.previous %}
   {% else %}
-    {% assign last lastPostIndex = site.posts | size | minus: 1 %}
-    {% assign previous = site.posts[lastPostIndex] %}
+    {% assign previous = site.posts[0] %}
   {% endif %}
   <a class="prev" href="{{ site.baseurl }}{{previous.url}}">&laquo;</a>
   {% if page.next %}
     {% assign next = page.next %}
   {% else %}
-    {% assign next = site.posts[0] %}
+    {% assign last lastPostIndex = site.posts | size | minus: 1 %}
+    {% assign next = site.posts[lastPostIndex] %}
   {% endif %}
   <a class="next" href="{{ site.baseurl }}{{next.url}}">&raquo;</a>
 </div>
