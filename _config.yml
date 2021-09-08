@@ -1,6 +1,6 @@
 domain: bradylane.github.io
 url: https://bradylane.github.io
-baseurl: /muzikstando-docs/
+baseurl: /muzikstando-docs
 permalink: /:title
 defaults:
   -
