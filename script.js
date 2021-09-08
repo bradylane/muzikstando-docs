@@ -1,4 +1,4 @@
 ---
 layout: blank
 ---
-const posts = '{{ site.posts }}'
+const posts = [{{ site.posts }}]
